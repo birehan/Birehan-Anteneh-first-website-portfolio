@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+:root{
+	--yellow:#f9ca24;
+}
+
+*::selection {
+	background: var(--yellow);
+	color: #333;
+}
+
+*{
+	font-family: 'nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	transition: all .2s linear;
+}
+
+html{
+	overflow-x: hidden;
+	min-height: 100vh;
+	bottom: 0;
+	top: 0%;
+	left: 0%;
+}
+html::-webkit-scrollbar{
+	width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+	background: #222;
+}
+html::-webkit-scrollbar-thumb{
+	background: var(--yellow);
+}
+body{
+	background: #fff;
+	min-height: 100%;
+	overflow-x: hidden;
+	bottom: 0;
+	top: 0%;
+	left: 0%;
+}
+/* main container css style for whole body container. */
+.container{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+}
+/* header logo css style.  */
+.user {
+display: none;
+}
+.logo-image{
+	padding: 0.5rem 0rem 0.3rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	
+}
+.logo {
+	display: block;
+	max-width: 100%;
+	margin: auto;
+}
+/* header section */
+
+/* header links css style. */
+.header-section{
+	display: flex;
+	flex-flow: column;
+	background: #111;
+	width: 100%; 
+	padding-top: 3%;
+	padding-bottom: 3%;
+	
+}
+
+/* navigation unordered list propery. */
+.navbar {
+	width: 100%;
+	margin: auto;
+}
+.nav-list {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style-type: none;
+	font-size: 4vw;
+		
+}
+.nav-list li {
+	display: inline-block;
+	margin: 0.2rem auto;
+	width: 40%;
+	padding: 0.5rem 2rem;
+	background: #333; 
+	border-radius: 5rem;
+}
+/* links flex property */
+.list-a {
+	text-align: center;
+	display: block;
+	width: 100%;
+	background: #333;
+	color: #fff;
+}
+
+/* current page property to change the style. */
+li.current{
+	background: rgb(165, 162, 162);
+	color: rgb(0, 0, 0);
+}
+.current a{
+	background: rgb(165, 162, 162);
+	color: rgb(0, 0, 0);
+	font-weight: 800;
+	/* font-size: 1rem; */
+}
+
+/* create a hover effect for navigation. */
+.nav-list li:hover, .contact:hover{
+	background: var(--yellow);
+}
+.list-a:hover{
+	background: var(--yellow);
+}
+/* Footer section.   */
+
+.footer-section{
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background: #111;
+	
+}
+/* hire me text property. */
+.hire-me{
+	font-size: 4vw;
+	margin: auto;
+	padding: 0.5rem 1rem;
+	border-radius: 5rem;
+	display: inline-block;
+	background:#333;
+	color: #fff;
+}	
+/* contact text property. */
+.contact{
+	margin: 0.5rem auto;
+	background: #333;
+	color: #fff;
+	border-radius: 3rem;
+	justify-content: center;
+	width: 30%;
+}
+ .contact a{
+	font-size:5vw;
+	display: block;
+	width: 50%;
+	align-content: center;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+
+} 
+.footer-list{
+	list-style-type: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+/* social media link property. */
+
+.footer-list li{
+	align-content: center;
+	display: block;
+	width: 15%; 
+}
+
+.fa {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	padding: 1rem;
+	font-size: 3rem;
+	text-align: center;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+.fa:hover {
+
+	opacity: 0.7;
+	color: #111;
+	background: white;
+  } 
+
+ 
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+	align-items: center;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  .fa-google {
+	background: #dd4b39;
+	color: white;
+  }
+
+  .fa-instagram {
+	background: #125688;
+	color: white;
+  }
+  .fa-skype {
+	background: #00aff0;
+	color: white;
+  }
+
+  .fa-flickr {
+	background: #f40083;
+	color: white;
+  }
+
+
+@media (min-width: 767px) {
+.logo-image{
+	display: none;
+}
+.header-section{
+	display: flex;
+	flex-flow: row nowrap;
+	background: #111;
+	width: 100%; 
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.navbar {
+	display: flex;
+	width: 100%;
+}
+.nav-list {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	font-size: 2vw;
+}
+
+.nav-list li {
+	margin: 0.3rem 0.5rem;
+	padding: 0.5rem 1rem;
+	background: #333; 
+}
+/* links flex property */
+.list-a {
+	text-align: center;
+	display: inline-block;
+	font-size: 1em;
+	background: #333;
+	color: #fff;
+	margin: 0.2em;
+	padding: 0.3em 0.2em;
+}
+li.current{
+	background: rgb(165, 162, 162);
+	color: rgb(0, 0, 0);
+}
+.hire-me{
+	font-size: 3vw;
+	margin: auto;
+	padding: 0.5rem 1rem;
+	border-radius: 5rem;
+	display: inline-block;
+	background:#333;
+	color: #fff;
+}	
+/* contact text property. */
+.contact{
+	margin: 0.5rem auto;
+	background: #333;
+	color: #fff;
+	border-radius: 3rem;
+	justify-content: center;
+	width: 25%;
+}
+ .contact a{
+	font-size:4vw;
+	display: block;
+	width: 50%;
+	align-content: center;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+
+} 
+.footer-list{
+	list-style-type: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+/* social media link property. */
+
+.footer-list li{
+	align-content: center;
+	display: block;
+	width: 10%; 
+}
+
+.fa {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	padding: 1rem;
+	font-size: 3rem;
+	text-align: center;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+}
+
+@media (min-width: 1023px) {
+
+	.container{
+		display: grid;
+		grid-template-columns: 1.5fr 2fr 2fr;
+		grid-template-rows: 1fr 3fr;
+
+	}
+	.logo-image{
+		display: block;
+	}
+	/* header logo css style.  */
+	.logo-image{
+		grid-column: 2/4;
+		grid-row: 1/2;
+		padding: 0.5rem 0rem 0.3rem;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	.logo {
+		display: block;
+		max-width: 100%;
+		margin: auto;
+	}
+	/* header section */
+	
+	/* header links css style. */
+	.header-section{
+		top: 0;
+		left: 0;
+		grid-column: 1/2;
+		grid-row: 1/3;
+		display: flex;
+		flex-flow: column;
+		background: #111;
+		background: #1a1a1a;
+		width: 100%; 
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 0%;
+	}
+	.user{
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	.header-image{
+		display: block;
+		width: 75%;
+		object-fit: cover;	
+		margin: auto;	
+	}
+	.profile{
+		max-width: 100%;
+		border-radius: 50%;
+		margin: 1rem;
+		margin-left: 0rem;
+	}
+	
+	.name{
+		font-size: 2rem;
+		color: #fff;
+	}
+	.post{
+		font-size: 1.5rem;
+		color: #fff;
+	}
+	
+	/* navigation unordered list propery. */
+	.navbar {
+		width: 60%;
+		margin: auto;
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+	.nav-list {
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+		justify-content: space-evenly;
+		align-items: center;
+		list-style-type: none;
+	}
+	.nav-list li {
+		display: inline-block;
+		margin: 0.2em 0.2em;
+		width: 100%;
+		
+	}
+	/* links flex property */
+	.list-a {
+		text-align: center;
+		display: block;
+		width: 100%;
+		background: #333;
+		color: #fff;
+		border-radius: 30%;	
+		
+	}
+	.main {
+		grid-column: 2/4;
+		grid-row: 2;
+	}
+	.hire-me{
+		font-size: 2.5vw;
+	}
+	.contact{
+		font-size: 3vw;
+		width: 18%;
+	}
+	.contact a{
+		font-size: 3vw;
+		text-align: center;
+
+	}
+	.footer-list li{
+		align-content: center;
+		display: block;
+		width: 7%; 
+	}
+	
+} 

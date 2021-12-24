@@ -1,0 +1,85 @@
+@import url(stayle.css);
+
+.main-containt{
+	display: flex;
+	flex-flow: column-reverse nowrap;
+	width: 100%;
+	background-color: rgb(19, 9, 9);
+	font-family: sans-serif ;
+	padding: 5% 10%;
+	}	
+/* property of image on the main body. */
+.image-container{
+	width: 100%;
+	padding-bottom: 5%;
+	display: block;
+	margin: auto;
+	
+}
+.image-container img{
+	width: 100%;
+	max-height: 400px;
+	border-radius: 8%;	
+}
+/* property of text area in main part. */
+.main-text{
+	width: fit-content;
+	height: fit-content;
+	padding: 1rem;
+	font-size: 100%;
+	border-radius: 2rem;
+	background: #333;
+	color: #fff;
+	display: block;
+  }
+
+@media (min-width: 767px){
+	.main-containt{
+		display: flex;
+		flex-flow: row nowrap;
+		padding: 5%;
+		}
+	.image-container{
+		width: 100%;
+		padding-left: 5%;
+		display: inline-block;
+		margin: auto;
+		padding-bottom: 0;
+		
+	}
+	.image-container img{
+		width: 100%;
+		max-height: 400px;	
+	}	
+	.main-text{
+		height: inherit;
+		padding: 8% 1rem;
+		font-size: 1.1rem;
+		border-radius: 2rem;
+		background: #333;
+		color: #fff;
+		display: inline-block;
+		box-sizing: border-box;
+	  }
+}
+
+@media (min-width: 1023px){
+	.main-containt{
+		padding: 0% 5%;
+		height: 400px;
+		}
+	.image-container{
+		width: 100%;
+		padding-left: 5%;
+		display: inline-block;
+		padding-bottom: 0;
+		height: inherit;
+		}
+	.image-container img{
+		width: 100%;
+		height: inherit;	
+		}	
+	.main-text{
+		font-size: 1.3rem;
+	}
+}

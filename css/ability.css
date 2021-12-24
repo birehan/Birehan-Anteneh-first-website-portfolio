@@ -1,0 +1,62 @@
+@import url(../css/stayle.css);
+
+.main-containt{
+  display: block;
+  
+}
+.ability{
+    display: block;
+    color: #333;
+    background: white;
+    width: fit-content;
+    margin: 3% auto;
+    border-radius: 3rem;
+    padding: 0rem 1rem;
+    max-width: 300px;
+    font-size: max(20px, 7vw);
+}
+.skills, .tools{
+    display: block;
+  font-size: 6vw;
+  color: #333;
+  background: white;
+  width: fit-content;
+  padding: 0rem 1rem;
+  margin: 3% auto 0%;
+  border-radius: 2rem;
+}
+.skills-list, .tools-list{
+    display: block;
+    width: 100%;
+    margin: auto;
+    color: white;
+    /* background-color: #111; */
+    list-style: none;
+}
+.skills-list li, .tools-list li{
+    padding:1rem 0.5rem 0.5rem 2rem;
+}
+
+@media (min-width: 767px){
+    .ability{
+        font-size: 5vw;
+        margin: 2% auto 0%;
+    }
+    .skills, .tools{
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 1023px) {
+    .ability{
+        font-size: 3vw;
+        margin: 2% auto 0%;
+    }
+    .skills, .tools{
+        font-size: 2vw;
+    }
+    .skills-list li, .tools-list li{
+        padding:0.2rem 0.5rem 0.2rem 2rem;
+    }
+
+}

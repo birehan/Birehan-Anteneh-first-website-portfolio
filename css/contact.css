@@ -1,0 +1,168 @@
+@import url(../css/stayle.css);
+
+.main-containt{
+	display: block;
+	width: 100%;
+}
+.contact-me{
+	display: block;
+	color: #333;
+	background: white;
+	width: fit-content;
+	margin: 3% auto;
+	border-radius: 3rem;
+	padding: 0rem 1rem;
+	max-width: 300px;
+	font-size: max(20px, 7vw);
+}
+.contact-para{
+	display: block;
+    color: white;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    font-size: 4vw;
+}
+.input-forms{
+	display: block;
+	width: 100%;
+	align-content: center;
+	margin: auto;
+}
+.name{
+	display: block;
+	width: 70%;
+	margin: 3% auto;
+	max-width: 350px;
+}
+.name input, .email input, .company input, .subject select{
+	padding: 2% 5% 2%;
+	border-radius: 5rem;
+	width: 100%;
+}
+.email{
+	display: block;
+	width: 70%;
+	margin: auto;
+	max-width: 350px;
+}
+.company{
+	display: block;
+	width: 70%;
+	margin: 3% auto;
+	max-width: 350px;
+}
+.subject{
+	display: block;
+	width: 70%;
+	margin: auto;
+	max-width: 350px;
+}
+.message{
+	display: block;
+	width: 70%;
+	height: 8rem;
+	margin: 3% auto;
+	max-width: 350px;
+}
+.message textarea{
+	padding: 5% ;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.7rem;
+}
+.submit{
+	display: block;
+	width: 30%;
+	margin: auto;
+	padding-bottom: 3%;
+	max-width: 250px;
+}
+.submit input{
+	padding: 2% 5% 2%;
+	width: 100%;
+	border-radius: 5rem;
+	opacity: 0.5;
+	font-weight: 900;
+	font-size: 4vw;
+}
+@media (min-width: 767px){
+	.contact-me{
+		margin-bottom: 0%;
+		font-size: 5vw;
+	}
+	.contact-para{
+		padding-bottom: 0%;
+	}
+	.information{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 70%;
+		margin: 3% auto;
+		max-width: 600px;
+	}
+	.name, .email, .company,.subject{
+		width: 100%;
+		padding-left: 5%;
+	}
+	.name input, .email input, .company input, .subject select{
+		padding:5%;
+		border-radius: 5rem;
+		width: 100%;
+		font-size: 2vw;
+	}
+	.message{
+		display: block;
+		height: 12rem;
+		margin: 3% auto; 
+		max-width: 600px;
+	}
+	.message textarea{
+		padding: 5% ;
+		width: 100%;
+		height: 100%;
+		border-radius: 0.7rem;
+		font-size: 2vw;
+	}
+	.submit{
+		display: block;
+		width: 30%;
+		margin: auto;
+		padding-bottom: 3%;
+		max-width: 300px;
+	}
+	.submit input{
+		padding: 2% 5% 2%;
+		width: 100%;
+		border-radius: 5rem;
+		opacity: 0.5;
+		font-weight: 900;
+		font-size: 3vw;
+	}
+}
+@media (min-width: 1023px){
+	.information{
+		max-width: 800px;
+	}
+	.contact-me{
+		font-size: 4vw;
+		margin-bottom: 0%;
+	}
+	.contact-para{
+		font-size: 3vw;
+		padding-bottom: 0%;
+	}
+	.submit{
+		width: 30%;
+	}
+	.submit input{
+		font-size: 2.5vw;
+	}
+	.name, .email, .company, .subject{
+		max-width: 500px;
+	}
+}
+
+

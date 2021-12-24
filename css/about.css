@@ -1,0 +1,110 @@
+@import url(../css/stayle.css);
+
+.main-containt{
+	display: block;
+}
+.profile-header{
+	display: block;
+	color: #333;
+	background: white;
+	width: fit-content;
+	margin: 3% auto;
+	border-radius: 3rem;
+	padding: 0rem 1rem;
+	max-width: 200px;
+	font-size: max(20px, 6vw);
+}
+.para{
+	display: block;
+    color: white;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0%;
+    font-size: 5vw;
+}
+.main-text{
+	display: block;
+	width: fit-content;
+	padding: 1rem;
+	color: white;
+	max-width: 500px;
+	margin: auto;
+	font-size: 1em;
+}
+.image-container{
+	display: block;
+	width: 80%;
+	margin: auto;
+	max-width: 400px;
+}
+.center-image{
+	width: 100%;
+	border-radius: 50%;
+}
+@media (min-width: 767px){
+	
+	.main-text{
+		max-width: 700px;
+	}
+	.image-container{
+		max-width: 500px;
+	}
+	.profile-header{
+		font-size: 4vw;
+	}
+	.para{
+		font-size: 3vw;
+	}	
+
+} 
+
+@media(min-width: 1023px){
+	.container{
+		display: grid;
+		grid-template-columns: 1.5fr 2fr 2fr;
+		grid-template-rows: 0.6fr 3fr;
+	}
+	.header-section{
+		top: 0;
+		left: 0;
+		grid-column: 1/2;
+		grid-row: 1/-1;
+		display: flex;
+		flex-flow: column;
+		background: #1a1a1a;
+		width: 100%; 
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 0%;
+		margin-top: 0%;
+	}
+	.main {
+		grid-column: 2/4;
+		grid-row: 2/-1;
+	}
+	.logo-image{
+		grid-column: 2/-1;
+		grid-row: 1/2;
+		width: 40%;
+	}
+	.main-text{
+		font-size: 1.4rem;
+	}
+	.sub-main{
+		display: flex;
+		flex-flow: row nowrap;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+	}
+	.profile-header{
+		font-size: 4vw;
+	}
+	.para{
+		font-size: 3vw;
+	}	
+
+}

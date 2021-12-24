@@ -1,0 +1,64 @@
+@import url(../css/stayle.css);
+
+.projects{
+  display: block;
+  color: #333;
+  background: white;
+  width: fit-content;
+  margin: 3% auto;
+  border-radius: 3rem;
+  padding: 0rem 1rem;
+  max-width: 300px;
+  font-size: max(20px, 7vw);
+}
+.projects-info{
+    display: block;
+    color: white;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    font-size: 4vw;
+}
+.projects-image-container{
+    display: block;
+    width: 100%;
+    padding: 5% 5% 0% 5%;
+}
+.project-image-1,.project-image-2,.project-image-3,.project-image-4{
+    padding-bottom: 5%;
+}
+
+@media (min-width: 767px){
+    .projects-image-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0% 3% 0%;
+    }
+    .project-image-1,.project-image-3{
+        padding-right: 5%;
+    }
+    .projects{
+        font-size: 5vw;
+        margin: 1rem auto 0rem;
+    }
+    .projects-info{
+        font-size: 3vw;
+    }  
+}
+
+@media (min-width: 1023px){
+    .projects-image-container{
+        height: 60%;
+    }
+    .projects{
+        margin-top: 0%;
+        font-size: 4vw;
+    }
+    .projects-info{
+        font-size: 2vw;
+    }
+}
+
+
